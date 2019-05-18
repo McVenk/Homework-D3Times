@@ -38,11 +38,11 @@ d3.csv("assets/data/data.csv", function(err, data) {
 
 // Creating Scales & axes
 
-var xscale = d3.scaleLinear().range([0, width]);
-var yscale = d3.scaleLinear().range([height, 0]);
+var xLinearScale = d3.scaleLinear().range([0, width]);
+var yLinearScale = d3.scaleLinear().range([height, 0]);
 
-var baxis = d3.axisBottom(xscale);
-var laxis = d3.axisLeft(yscale);
+var baxis = d3.axisBottom(xLinearScale);
+var laxis = d3.axisLeft(yLinearScale);
 
 // Declaring limits
   var xlowerlimit;
